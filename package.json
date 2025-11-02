@@ -16,14 +16,15 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-helmet": "^6.1.0",
-    "react-router-dom": "^7.7.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build && next-sitemap",
-    "start": "next start"
+    "start": "next start",
+    "export": "next build && next export",
+    "preview": "next build && next start"
   },
   "eslintConfig": {
     "extends": [
