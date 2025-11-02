@@ -1,0 +1,852 @@
+/* Base Styles */
+.appContainer {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+  color: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+}
+
+.printMode {
+  background: white !important;
+  color: black !important;
+}
+
+.printHeader {
+  display: none;
+}
+
+/* Header Styles */
+.appHeader {
+  position: relative;
+  padding: 6rem 2rem 4rem;
+  text-align: center;
+  background: linear-gradient(135deg, 
+    rgba(15, 15, 35, 0.95) 0%, 
+    rgba(26, 26, 46, 0.9) 50%, 
+    rgba(22, 33, 62, 0.85) 100%);
+}
+
+.headerContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.headerTitle {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #ffffff 0%, #a8b2d1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Poppins', sans-serif;
+}
+
+.headerSubtitle {
+  font-size: 1.25rem;
+  color: #a8b2d1;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Main Content */
+.mainContent {
+  padding: 0 2rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.calculatorContainer {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 3rem;
+  transition: all 0.3s ease;
+}
+
+.calculatorContainer.calculating {
+  animation: pulse 0.6s ease-in-out;
+}
+
+/* Mode Selector */
+.modeSelector {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  justify-content: center;
+}
+
+.modeBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 1rem 1.5rem;
+  color: #a8b2d1;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  font-family: 'Inter', sans-serif;
+}
+
+.modeBtn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.modeBtn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  border-color: rgba(102, 126, 234, 0.5);
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+}
+
+.modeIcon {
+  font-size: 1.25rem;
+}
+
+/* Date Input Section */
+.dateInputSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.inputCard {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.inputCard:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+.inputLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 1.125rem;
+}
+
+.labelIcon {
+  font-size: 1.5rem;
+}
+
+.dateInput {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  color: #ffffff;
+  font-size: 1.125rem;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.dateInput:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.dateInput::placeholder {
+  color: #a8b2d1;
+}
+
+.errorText {
+  color: #ff6b6b;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+/* Action Buttons */
+.actionButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.calculateBtn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 16px;
+  padding: 1.25rem 2.5rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  font-family: 'Inter', sans-serif;
+}
+
+.calculateBtn:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4);
+}
+
+.calculateBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.resetBtn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 1.25rem 2rem;
+  color: #a8b2d1;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  font-family: 'Inter', sans-serif;
+}
+
+.resetBtn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Results Section */
+.resultsSection {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.resultHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.resultTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #ffffff 0%, #a8b2d1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Poppins', sans-serif;
+}
+
+.ageSummary {
+  font-size: 1.5rem;
+  color: #a8b2d1;
+  margin: 0;
+}
+
+/* Age Cards Grid */
+.ageCardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.ageCard {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  animation: slideInUp 0.6s ease-out both;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.ageCard:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.cardContent {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cardIcon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.cardText {
+  flex: 1;
+  min-width: 0;
+}
+
+.cardTitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #a8b2d1;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cardValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.25rem 0;
+  font-family: 'Poppins', sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.2;
+}
+
+.cardUnit {
+  font-size: 0.8rem;
+  color: #a8b2d1;
+  margin: 0;
+  text-transform: lowercase;
+}
+
+/* Features Section */
+.featuresSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.featureCard {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.featureCard:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-3px);
+}
+
+.featureTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Zodiac Info */
+.zodiacInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.zodiacItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.zodiacItem:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateX(5px);
+}
+
+.zodiacIcon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.zodiacName {
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 0.25rem 0;
+}
+
+.zodiacDetail {
+  color: #a8b2d1;
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+/* Countdown Box */
+.countdownBox {
+  text-align: center;
+  padding: 2rem;
+}
+
+.countdownDays {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #667eea;
+  margin: 0 0 0.5rem 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.countdownLabel {
+  font-size: 1.125rem;
+  color: #a8b2d1;
+  margin: 0 0 0.5rem 0;
+}
+
+.countdownDate {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.birthdayToday {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffd700;
+  margin: 0;
+  text-align: center;
+}
+
+/* Progress Bar */
+.progressContainer {
+  padding: 1rem 0;
+}
+
+.progressBar {
+  width: 100%;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 6px;
+  transition: width 1s ease-in-out;
+}
+
+.progressStats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  color: #a8b2d1;
+}
+
+.progressNote {
+  font-size: 0.875rem;
+  color: #a8b2d1;
+  margin: 0;
+  text-align: center;
+}
+
+/* Milestones Grid */
+.milestonesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.milestoneItem {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.milestoneItem:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: scale(1.05);
+}
+
+.milestoneAge {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #667eea;
+  display: block;
+  margin-bottom: 0.25rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.milestoneLabel {
+  font-size: 0.7rem;
+  color: #a8b2d1;
+  margin: 0 0 0.25rem 0;
+}
+
+.milestoneDate {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 0.25rem 0;
+}
+
+.milestoneYearsLeft {
+  font-size: 0.7rem;
+  color: #a8b2d1;
+  margin: 0;
+}
+
+/* Retirement Box */
+.retirementBox {
+  text-align: center;
+  padding: 1rem;
+}
+
+.retirementYears {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff6b6b;
+  margin: 0 0 0.5rem 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.retirementLabel {
+  font-size: 1rem;
+  color: #a8b2d1;
+  margin: 0 0 0.5rem 0;
+}
+
+.retirementDate {
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+}
+
+.retirementDetail {
+  font-size: 0.8rem;
+  color: #a8b2d1;
+  margin: 0;
+}
+
+/* Events Timeline */
+.eventsSubtitle {
+  color: #a8b2d1;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.eventsTimeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.eventItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.eventItem:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateX(5px);
+}
+
+.eventYear {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+.eventText {
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+
+/* Fun Facts */
+.funFacts {
+  margin-bottom: 4rem;
+}
+
+.funFactsTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.factsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.factCard {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.factCard:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-3px);
+}
+
+.factIcon {
+  font-size: 1.75rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.factText {
+  color: #a8b2d1;
+  margin: 0;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+/* Share Section */
+.shareSection {
+  text-align: center;
+}
+
+.shareTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.shareButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.shareBtn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+}
+
+.shareBtn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.shareBtn.fb { background: rgba(59, 89, 152, 0.2); border-color: rgba(59, 89, 152, 0.4); }
+.shareBtn.tw { background: rgba(29, 161, 242, 0.2); border-color: rgba(29, 161, 242, 0.4); }
+.shareBtn.wa { background: rgba(37, 211, 102, 0.2); border-color: rgba(37, 211, 102, 0.4); }
+.shareBtn.em { background: rgba(234, 67, 53, 0.2); border-color: rgba(234, 67, 53, 0.4); }
+.shareBtn.print { background: rgba(102, 126, 234, 0.2); border-color: rgba(102, 126, 234, 0.4); }
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .appHeader {
+    padding: 5rem 1rem 3rem;
+  }
+  
+  .mainContent {
+    padding: 0 1rem 3rem;
+  }
+  
+  .calculatorContainer {
+    padding: 2rem 1.5rem;
+  }
+  
+  .modeSelector {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .dateInputSection {
+    grid-template-columns: 1fr;
+  }
+  
+  .actionButtons {
+    flex-direction: column;
+  }
+  
+  .ageCardsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .featuresSection {
+    grid-template-columns: 1fr;
+  }
+  
+  .shareButtons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .resultTitle {
+    font-size: 2rem;
+  }
+  
+  .ageSummary {
+    font-size: 1.25rem;
+  }
+  
+  .cardValue {
+    font-size: 1.4rem;
+  }
+  
+  .cardIcon {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerTitle {
+    font-size: 2rem;
+  }
+  
+  .headerSubtitle {
+    font-size: 1rem;
+  }
+  
+  .calculatorContainer {
+    padding: 1.5rem 1rem;
+    border-radius: 16px;
+  }
+  
+  .inputCard {
+    padding: 1.5rem;
+  }
+  
+  .ageCard {
+    padding: 1.5rem;
+  }
+  
+  .cardContent {
+    gap: 1rem;
+  }
+  
+  .cardIcon {
+    font-size: 2rem;
+  }
+  
+  .cardValue {
+    font-size: 1.3rem;
+  }
+  
+  .cardTitle {
+    font-size: 0.85rem;
+  }
+  
+  .cardUnit {
+    font-size: 0.75rem;
+  }
+  
+  .featureCard {
+    padding: 1.5rem;
+  }
+  
+  .milestonesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .countdownDays {
+    font-size: 2.5rem;
+  }
+  
+  .retirementYears {
+    font-size: 2rem;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .calculatorContainer,
+  .ageCard,
+  .featureCard,
+  .factCard,
+  .modeBtn,
+  .calculateBtn,
+  .resetBtn,
+  .shareBtn,
+  .zodiacItem,
+  .milestoneItem,
+  .eventItem {
+    transition: none !important;
+    animation: none !important;
+  }
+  
+  .calculatorContainer.calculating {
+    animation: none;
+  }
+  
+  .ageCard {
+    animation: none;
+  }
+}

@@ -1,0 +1,30 @@
+/* styles/globals.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%) !important;
+  color: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.app-wrapper {
+  background: #000000;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Force black background on all elements */
+body, div, section, main, header, footer, nav, article, aside {
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%) !important;
+}
+
+/* Ensure no white gaps */
+* {
+  background-color: inherit;
+}

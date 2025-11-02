@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://www.ageranker.com
+
+# Sitemaps
+Sitemap: https://www.ageranker.com/sitemap.xml

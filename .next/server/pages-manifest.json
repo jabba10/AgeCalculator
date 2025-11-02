@@ -1,0 +1,8 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/age-comparator": "pages/age-comparator.js",
+  "/age-calculator": "pages/age-calculator.js",
+  "/age-quiz-game": "pages/age-quiz-game.js"
+}
