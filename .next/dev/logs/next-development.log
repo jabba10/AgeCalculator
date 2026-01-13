@@ -1,0 +1,856 @@
+[00:00:02.954] Server  LOG     ✓ Ready in 1838ms
+[00:00:13.726] Server  LOG     ○ Compiling / ...
+[00:00:17.595] Browser ERROR   uncaughtError: Error: ./src/pages/index.jsx:3:1
+Export FiCalculator doesn't exist in target module
+   1 | import Head from 'next/head';
+   2 | import Link from 'next/link';
+>  3 | import {
+     | ^^^^^^^^
+>  4 |   FiCalculator,
+     | ^^^^^^^^^^^^^^^
+>  5 |   FiUsers,
+     | ^^^^^^^^^^^^^^^
+>  6 |   FiAward,
+     | ^^^^^^^^^^^^^^^
+>  7 |   FiClock,
+     | ^^^^^^^^^^^^^^^
+>  8 |   FiCheck,
+     | ^^^^^^^^^^^^^^^
+>  9 |   FiTrendingUp,
+     | ^^^^^^^^^^^^^^^
+> 10 |   FiStar,
+     | ^^^^^^^^^^^^^^^
+> 11 |   FiArrowRight,
+     | ^^^^^^^^^^^^^^^
+> 12 |   FiCalendar,
+     | ^^^^^^^^^^^^^^^
+> 13 |   FiHome,
+     | ^^^^^^^^^^^^^^^
+> 14 |   FiChevronRight,
+     | ^^^^^^^^^^^^^^^
+> 15 |   FiBarChart,
+     | ^^^^^^^^^^^^^^^
+> 16 |   FiTarget,
+     | ^^^^^^^^^^^^^^^
+> 17 |   FiShield,
+     | ^^^^^^^^^^^^^^^
+> 18 |   FiSmartphone,
+     | ^^^^^^^^^^^^^^^
+> 19 |   FiGlobe,
+     | ^^^^^^^^^^^^^^^
+> 20 |   FiEye
+     | ^^^^^^^^^^^^^^^
+> 21 | } from 'react-icons/fi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  22 | import styles from './HomePage.module.css';
+  23 |
+  24 | // Main Page Component with SSG and ISR
+
+The export FiCalculator was not found in module [project]/node_modules/react-icons/fi/index.mjs [client] (ecmascript).
+Did you mean to import FiCalendar?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+[00:00:17.934] Browser ERROR   ./src/pages/index.jsx:3:1
+Export FiCalculator doesn't exist in target module
+   1 | import Head from 'next/head';
+   2 | import Link from 'next/link';
+>  3 | import {
+     | ^^^^^^^^
+>  4 |   FiCalculator,
+     | ^^^^^^^^^^^^^^^
+>  5 |   FiUsers,
+     | ^^^^^^^^^^^^^^^
+>  6 |   FiAward,
+     | ^^^^^^^^^^^^^^^
+>  7 |   FiClock,
+     | ^^^^^^^^^^^^^^^
+>  8 |   FiCheck,
+     | ^^^^^^^^^^^^^^^
+>  9 |   FiTrendingUp,
+     | ^^^^^^^^^^^^^^^
+> 10 |   FiStar,
+     | ^^^^^^^^^^^^^^^
+> 11 |   FiArrowRight,
+     | ^^^^^^^^^^^^^^^
+> 12 |   FiCalendar,
+     | ^^^^^^^^^^^^^^^
+> 13 |   FiHome,
+     | ^^^^^^^^^^^^^^^
+> 14 |   FiChevronRight,
+     | ^^^^^^^^^^^^^^^
+> 15 |   FiBarChart,
+     | ^^^^^^^^^^^^^^^
+> 16 |   FiTarget,
+     | ^^^^^^^^^^^^^^^
+> 17 |   FiShield,
+     | ^^^^^^^^^^^^^^^
+> 18 |   FiSmartphone,
+     | ^^^^^^^^^^^^^^^
+> 19 |   FiGlobe,
+     | ^^^^^^^^^^^^^^^
+> 20 |   FiEye
+     | ^^^^^^^^^^^^^^^
+> 21 | } from 'react-icons/fi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  22 | import styles from './HomePage.module.css';
+  23 |
+  24 | // Main Page Component with SSG and ISR
+
+The export FiCalculator was not found in module [project]/node_modules/react-icons/fi/index.mjs [client] (ecmascript).
+Did you mean to import FiCalendar?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:00:17.935] Browser ERROR   ./src/pages/index.jsx:3:1
+Export FiCalculator doesn't exist in target module
+   1 | import Head from 'next/head';
+   2 | import Link from 'next/link';
+>  3 | import {
+     | ^^^^^^^^
+>  4 |   FiCalculator,
+     | ^^^^^^^^^^^^^^^
+>  5 |   FiUsers,
+     | ^^^^^^^^^^^^^^^
+>  6 |   FiAward,
+     | ^^^^^^^^^^^^^^^
+>  7 |   FiClock,
+     | ^^^^^^^^^^^^^^^
+>  8 |   FiCheck,
+     | ^^^^^^^^^^^^^^^
+>  9 |   FiTrendingUp,
+     | ^^^^^^^^^^^^^^^
+> 10 |   FiStar,
+     | ^^^^^^^^^^^^^^^
+> 11 |   FiArrowRight,
+     | ^^^^^^^^^^^^^^^
+> 12 |   FiCalendar,
+     | ^^^^^^^^^^^^^^^
+> 13 |   FiHome,
+     | ^^^^^^^^^^^^^^^
+> 14 |   FiChevronRight,
+     | ^^^^^^^^^^^^^^^
+> 15 |   FiBarChart,
+     | ^^^^^^^^^^^^^^^
+> 16 |   FiTarget,
+     | ^^^^^^^^^^^^^^^
+> 17 |   FiShield,
+     | ^^^^^^^^^^^^^^^
+> 18 |   FiSmartphone,
+     | ^^^^^^^^^^^^^^^
+> 19 |   FiGlobe,
+     | ^^^^^^^^^^^^^^^
+> 20 |   FiEye
+     | ^^^^^^^^^^^^^^^
+> 21 | } from 'react-icons/fi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  22 | import styles from './HomePage.module.css';
+  23 |
+  24 | // Main Page Component with SSG and ISR
+
+The export FiCalculator was not found in module [project]/node_modules/react-icons/fi/index.mjs [ssr] (ecmascript).
+Did you mean to import FiCalendar?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:00:17.935] Browser ERROR   ./src/pages/index.jsx:3:1
+Export FiCalculator doesn't exist in target module
+   1 | import Head from 'next/head';
+   2 | import Link from 'next/link';
+>  3 | import {
+     | ^^^^^^^^
+>  4 |   FiCalculator,
+     | ^^^^^^^^^^^^^^^
+>  5 |   FiUsers,
+     | ^^^^^^^^^^^^^^^
+>  6 |   FiAward,
+     | ^^^^^^^^^^^^^^^
+>  7 |   FiClock,
+     | ^^^^^^^^^^^^^^^
+>  8 |   FiCheck,
+     | ^^^^^^^^^^^^^^^
+>  9 |   FiTrendingUp,
+     | ^^^^^^^^^^^^^^^
+> 10 |   FiStar,
+     | ^^^^^^^^^^^^^^^
+> 11 |   FiArrowRight,
+     | ^^^^^^^^^^^^^^^
+> 12 |   FiCalendar,
+     | ^^^^^^^^^^^^^^^
+> 13 |   FiHome,
+     | ^^^^^^^^^^^^^^^
+> 14 |   FiChevronRight,
+     | ^^^^^^^^^^^^^^^
+> 15 |   FiBarChart,
+     | ^^^^^^^^^^^^^^^
+> 16 |   FiTarget,
+     | ^^^^^^^^^^^^^^^
+> 17 |   FiShield,
+     | ^^^^^^^^^^^^^^^
+> 18 |   FiSmartphone,
+     | ^^^^^^^^^^^^^^^
+> 19 |   FiGlobe,
+     | ^^^^^^^^^^^^^^^
+> 20 |   FiEye
+     | ^^^^^^^^^^^^^^^
+> 21 | } from 'react-icons/fi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  22 | import styles from './HomePage.module.css';
+  23 |
+  24 | // Main Page Component with SSG and ISR
+
+The export FiCalculator was not found in module [project]/node_modules/react-icons/fi/index.mjs [client] (ecmascript).
+Did you mean to import FiCalendar?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:00:17.935] Browser ERROR   ./src/pages/index.jsx:3:1
+Export FiCalculator doesn't exist in target module
+   1 | import Head from 'next/head';
+   2 | import Link from 'next/link';
+>  3 | import {
+     | ^^^^^^^^
+>  4 |   FiCalculator,
+     | ^^^^^^^^^^^^^^^
+>  5 |   FiUsers,
+     | ^^^^^^^^^^^^^^^
+>  6 |   FiAward,
+     | ^^^^^^^^^^^^^^^
+>  7 |   FiClock,
+     | ^^^^^^^^^^^^^^^
+>  8 |   FiCheck,
+     | ^^^^^^^^^^^^^^^
+>  9 |   FiTrendingUp,
+     | ^^^^^^^^^^^^^^^
+> 10 |   FiStar,
+     | ^^^^^^^^^^^^^^^
+> 11 |   FiArrowRight,
+     | ^^^^^^^^^^^^^^^
+> 12 |   FiCalendar,
+     | ^^^^^^^^^^^^^^^
+> 13 |   FiHome,
+     | ^^^^^^^^^^^^^^^
+> 14 |   FiChevronRight,
+     | ^^^^^^^^^^^^^^^
+> 15 |   FiBarChart,
+     | ^^^^^^^^^^^^^^^
+> 16 |   FiTarget,
+     | ^^^^^^^^^^^^^^^
+> 17 |   FiShield,
+     | ^^^^^^^^^^^^^^^
+> 18 |   FiSmartphone,
+     | ^^^^^^^^^^^^^^^
+> 19 |   FiGlobe,
+     | ^^^^^^^^^^^^^^^
+> 20 |   FiEye
+     | ^^^^^^^^^^^^^^^
+> 21 | } from 'react-icons/fi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  22 | import styles from './HomePage.module.css';
+  23 |
+  24 | // Main Page Component with SSG and ISR
+
+The export FiCalculator was not found in module [project]/node_modules/react-icons/fi/index.mjs [ssr] (ecmascript).
+Did you mean to import FiCalendar?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:00:18.612] Browser ERROR   ./src/pages/index.jsx:3:1
+Export FiCalculator doesn't exist in target module
+   1 | import Head from 'next/head';
+   2 | import Link from 'next/link';
+>  3 | import {
+     | ^^^^^^^^
+>  4 |   FiCalculator,
+     | ^^^^^^^^^^^^^^^
+>  5 |   FiUsers,
+     | ^^^^^^^^^^^^^^^
+>  6 |   FiAward,
+     | ^^^^^^^^^^^^^^^
+>  7 |   FiClock,
+     | ^^^^^^^^^^^^^^^
+>  8 |   FiCheck,
+     | ^^^^^^^^^^^^^^^
+>  9 |   FiTrendingUp,
+     | ^^^^^^^^^^^^^^^
+> 10 |   FiStar,
+     | ^^^^^^^^^^^^^^^
+> 11 |   FiArrowRight,
+     | ^^^^^^^^^^^^^^^
+> 12 |   FiCalendar,
+     | ^^^^^^^^^^^^^^^
+> 13 |   FiHome,
+     | ^^^^^^^^^^^^^^^
+> 14 |   FiChevronRight,
+     | ^^^^^^^^^^^^^^^
+> 15 |   FiBarChart,
+     | ^^^^^^^^^^^^^^^
+> 16 |   FiTarget,
+     | ^^^^^^^^^^^^^^^
+> 17 |   FiShield,
+     | ^^^^^^^^^^^^^^^
+> 18 |   FiSmartphone,
+     | ^^^^^^^^^^^^^^^
+> 19 |   FiGlobe,
+     | ^^^^^^^^^^^^^^^
+> 20 |   FiEye
+     | ^^^^^^^^^^^^^^^
+> 21 | } from 'react-icons/fi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  22 | import styles from './HomePage.module.css';
+  23 |
+  24 | // Main Page Component with SSG and ISR
+
+The export FiCalculator was not found in module [project]/node_modules/react-icons/fi/index.mjs [client] (ecmascript).
+Did you mean to import FiCalendar?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:00:18.612] Browser ERROR   ./src/pages/index.jsx:3:1
+Export FiCalculator doesn't exist in target module
+   1 | import Head from 'next/head';
+   2 | import Link from 'next/link';
+>  3 | import {
+     | ^^^^^^^^
+>  4 |   FiCalculator,
+     | ^^^^^^^^^^^^^^^
+>  5 |   FiUsers,
+     | ^^^^^^^^^^^^^^^
+>  6 |   FiAward,
+     | ^^^^^^^^^^^^^^^
+>  7 |   FiClock,
+     | ^^^^^^^^^^^^^^^
+>  8 |   FiCheck,
+     | ^^^^^^^^^^^^^^^
+>  9 |   FiTrendingUp,
+     | ^^^^^^^^^^^^^^^
+> 10 |   FiStar,
+     | ^^^^^^^^^^^^^^^
+> 11 |   FiArrowRight,
+     | ^^^^^^^^^^^^^^^
+> 12 |   FiCalendar,
+     | ^^^^^^^^^^^^^^^
+> 13 |   FiHome,
+     | ^^^^^^^^^^^^^^^
+> 14 |   FiChevronRight,
+     | ^^^^^^^^^^^^^^^
+> 15 |   FiBarChart,
+     | ^^^^^^^^^^^^^^^
+> 16 |   FiTarget,
+     | ^^^^^^^^^^^^^^^
+> 17 |   FiShield,
+     | ^^^^^^^^^^^^^^^
+> 18 |   FiSmartphone,
+     | ^^^^^^^^^^^^^^^
+> 19 |   FiGlobe,
+     | ^^^^^^^^^^^^^^^
+> 20 |   FiEye
+     | ^^^^^^^^^^^^^^^
+> 21 | } from 'react-icons/fi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  22 | import styles from './HomePage.module.css';
+  23 |
+  24 | // Main Page Component with SSG and ISR
+
+The export FiCalculator was not found in module [project]/node_modules/react-icons/fi/index.mjs [ssr] (ecmascript).
+Did you mean to import FiCalendar?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:03:28.250] Server  LOG     ✓ Compiled in 176ms
+[00:03:31.997] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:32.000] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:32.681] Browser ERROR   uncaughtError: Error: ./src/pages/index.jsx:4:1
+Export FiCalculator doesn't exist in target module
+   2 | import { } from 'react-icons/fi';
+   3 | import Link from 'next/link';
+>  4 | import {
+     | ^^^^^^^^
+>  5 |   FiCalculator,
+     | ^^^^^^^^^^^^^^^
+>  6 |   FiUsers,
+     | ^^^^^^^^^^^^^^^
+>  7 |   FiAward,
+     | ^^^^^^^^^^^^^^^
+>  8 |   FiClock,
+     | ^^^^^^^^^^^^^^^
+>  9 |   FiCheck,
+     | ^^^^^^^^^^^^^^^
+> 10 |   FiTrendingUp,
+     | ^^^^^^^^^^^^^^^
+> 11 |   FiStar,
+     | ^^^^^^^^^^^^^^^
+> 12 |   FiArrowRight,
+     | ^^^^^^^^^^^^^^^
+> 13 |   FiCalendar,
+     | ^^^^^^^^^^^^^^^
+> 14 |   FiHome,
+     | ^^^^^^^^^^^^^^^
+> 15 |   FiChevronRight,
+     | ^^^^^^^^^^^^^^^
+> 16 |   FiBarChart,
+     | ^^^^^^^^^^^^^^^
+> 17 |   FiTarget,
+     | ^^^^^^^^^^^^^^^
+> 18 |   FiShield,
+     | ^^^^^^^^^^^^^^^
+> 19 |   FiSmartphone,
+     | ^^^^^^^^^^^^^^^
+> 20 |   FiGlobe,
+     | ^^^^^^^^^^^^^^^
+> 21 |   FiEye
+     | ^^^^^^^^^^^^^^^
+> 22 | } from 'react-icons/fi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import styles from './HomePage.module.css';
+  24 |
+  25 | // Main Page Component with SSG and ISR
+
+The export FiCalculator was not found in module [project]/node_modules/react-icons/fi/index.mjs [client] (ecmascript).
+Did you mean to import FiCalendar?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+[00:03:32.843] Browser ERROR   ./src/pages/index.jsx:4:1
+Export FiCalculator doesn't exist in target module
+   2 | import { } from 'react-icons/fi';
+   3 | import Link from 'next/link';
+>  4 | import {
+     | ^^^^^^^^
+>  5 |   FiCalculator,
+     | ^^^^^^^^^^^^^^^
+>  6 |   FiUsers,
+     | ^^^^^^^^^^^^^^^
+>  7 |   FiAward,
+     | ^^^^^^^^^^^^^^^
+>  8 |   FiClock,
+     | ^^^^^^^^^^^^^^^
+>  9 |   FiCheck,
+     | ^^^^^^^^^^^^^^^
+> 10 |   FiTrendingUp,
+     | ^^^^^^^^^^^^^^^
+> 11 |   FiStar,
+     | ^^^^^^^^^^^^^^^
+> 12 |   FiArrowRight,
+     | ^^^^^^^^^^^^^^^
+> 13 |   FiCalendar,
+     | ^^^^^^^^^^^^^^^
+> 14 |   FiHome,
+     | ^^^^^^^^^^^^^^^
+> 15 |   FiChevronRight,
+     | ^^^^^^^^^^^^^^^
+> 16 |   FiBarChart,
+     | ^^^^^^^^^^^^^^^
+> 17 |   FiTarget,
+     | ^^^^^^^^^^^^^^^
+> 18 |   FiShield,
+     | ^^^^^^^^^^^^^^^
+> 19 |   FiSmartphone,
+     | ^^^^^^^^^^^^^^^
+> 20 |   FiGlobe,
+     | ^^^^^^^^^^^^^^^
+> 21 |   FiEye
+     | ^^^^^^^^^^^^^^^
+> 22 | } from 'react-icons/fi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import styles from './HomePage.module.css';
+  24 |
+  25 | // Main Page Component with SSG and ISR
+
+The export FiCalculator was not found in module [project]/node_modules/react-icons/fi/index.mjs [client] (ecmascript).
+Did you mean to import FiCalendar?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:03:32.843] Browser ERROR   ./src/pages/index.jsx:4:1
+Export FiCalculator doesn't exist in target module
+   2 | import { } from 'react-icons/fi';
+   3 | import Link from 'next/link';
+>  4 | import {
+     | ^^^^^^^^
+>  5 |   FiCalculator,
+     | ^^^^^^^^^^^^^^^
+>  6 |   FiUsers,
+     | ^^^^^^^^^^^^^^^
+>  7 |   FiAward,
+     | ^^^^^^^^^^^^^^^
+>  8 |   FiClock,
+     | ^^^^^^^^^^^^^^^
+>  9 |   FiCheck,
+     | ^^^^^^^^^^^^^^^
+> 10 |   FiTrendingUp,
+     | ^^^^^^^^^^^^^^^
+> 11 |   FiStar,
+     | ^^^^^^^^^^^^^^^
+> 12 |   FiArrowRight,
+     | ^^^^^^^^^^^^^^^
+> 13 |   FiCalendar,
+     | ^^^^^^^^^^^^^^^
+> 14 |   FiHome,
+     | ^^^^^^^^^^^^^^^
+> 15 |   FiChevronRight,
+     | ^^^^^^^^^^^^^^^
+> 16 |   FiBarChart,
+     | ^^^^^^^^^^^^^^^
+> 17 |   FiTarget,
+     | ^^^^^^^^^^^^^^^
+> 18 |   FiShield,
+     | ^^^^^^^^^^^^^^^
+> 19 |   FiSmartphone,
+     | ^^^^^^^^^^^^^^^
+> 20 |   FiGlobe,
+     | ^^^^^^^^^^^^^^^
+> 21 |   FiEye
+     | ^^^^^^^^^^^^^^^
+> 22 | } from 'react-icons/fi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import styles from './HomePage.module.css';
+  24 |
+  25 | // Main Page Component with SSG and ISR
+
+The export FiCalculator was not found in module [project]/node_modules/react-icons/fi/index.mjs [ssr] (ecmascript).
+Did you mean to import FiCalendar?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:03:32.961] Browser ERROR   ./src/pages/index.jsx:4:1
+Export FiCalculator doesn't exist in target module
+   2 | import { } from 'react-icons/fi';
+   3 | import Link from 'next/link';
+>  4 | import {
+     | ^^^^^^^^
+>  5 |   FiCalculator,
+     | ^^^^^^^^^^^^^^^
+>  6 |   FiUsers,
+     | ^^^^^^^^^^^^^^^
+>  7 |   FiAward,
+     | ^^^^^^^^^^^^^^^
+>  8 |   FiClock,
+     | ^^^^^^^^^^^^^^^
+>  9 |   FiCheck,
+     | ^^^^^^^^^^^^^^^
+> 10 |   FiTrendingUp,
+     | ^^^^^^^^^^^^^^^
+> 11 |   FiStar,
+     | ^^^^^^^^^^^^^^^
+> 12 |   FiArrowRight,
+     | ^^^^^^^^^^^^^^^
+> 13 |   FiCalendar,
+     | ^^^^^^^^^^^^^^^
+> 14 |   FiHome,
+     | ^^^^^^^^^^^^^^^
+> 15 |   FiChevronRight,
+     | ^^^^^^^^^^^^^^^
+> 16 |   FiBarChart,
+     | ^^^^^^^^^^^^^^^
+> 17 |   FiTarget,
+     | ^^^^^^^^^^^^^^^
+> 18 |   FiShield,
+     | ^^^^^^^^^^^^^^^
+> 19 |   FiSmartphone,
+     | ^^^^^^^^^^^^^^^
+> 20 |   FiGlobe,
+     | ^^^^^^^^^^^^^^^
+> 21 |   FiEye
+     | ^^^^^^^^^^^^^^^
+> 22 | } from 'react-icons/fi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import styles from './HomePage.module.css';
+  24 |
+  25 | // Main Page Component with SSG and ISR
+
+The export FiCalculator was not found in module [project]/node_modules/react-icons/fi/index.mjs [client] (ecmascript).
+Did you mean to import FiCalendar?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:03:32.961] Browser ERROR   ./src/pages/index.jsx:4:1
+Export FiCalculator doesn't exist in target module
+   2 | import { } from 'react-icons/fi';
+   3 | import Link from 'next/link';
+>  4 | import {
+     | ^^^^^^^^
+>  5 |   FiCalculator,
+     | ^^^^^^^^^^^^^^^
+>  6 |   FiUsers,
+     | ^^^^^^^^^^^^^^^
+>  7 |   FiAward,
+     | ^^^^^^^^^^^^^^^
+>  8 |   FiClock,
+     | ^^^^^^^^^^^^^^^
+>  9 |   FiCheck,
+     | ^^^^^^^^^^^^^^^
+> 10 |   FiTrendingUp,
+     | ^^^^^^^^^^^^^^^
+> 11 |   FiStar,
+     | ^^^^^^^^^^^^^^^
+> 12 |   FiArrowRight,
+     | ^^^^^^^^^^^^^^^
+> 13 |   FiCalendar,
+     | ^^^^^^^^^^^^^^^
+> 14 |   FiHome,
+     | ^^^^^^^^^^^^^^^
+> 15 |   FiChevronRight,
+     | ^^^^^^^^^^^^^^^
+> 16 |   FiBarChart,
+     | ^^^^^^^^^^^^^^^
+> 17 |   FiTarget,
+     | ^^^^^^^^^^^^^^^
+> 18 |   FiShield,
+     | ^^^^^^^^^^^^^^^
+> 19 |   FiSmartphone,
+     | ^^^^^^^^^^^^^^^
+> 20 |   FiGlobe,
+     | ^^^^^^^^^^^^^^^
+> 21 |   FiEye
+     | ^^^^^^^^^^^^^^^
+> 22 | } from 'react-icons/fi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import styles from './HomePage.module.css';
+  24 |
+  25 | // Main Page Component with SSG and ISR
+
+The export FiCalculator was not found in module [project]/node_modules/react-icons/fi/index.mjs [ssr] (ecmascript).
+Did you mean to import FiCalendar?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:03:45.741] Browser ERROR   uncaughtError: Error: ./src/pages/index.jsx:4:1
+Export FiCalculator doesn't exist in target module
+   2 | import { } from 'react-icons/fi';
+   3 | import Link from 'next/link';
+>  4 | import {
+     | ^^^^^^^^
+>  5 |   FiCalculator,
+     | ^^^^^^^^^^^^^^^
+>  6 |   FiUsers,
+     | ^^^^^^^^^^^^^^^
+>  7 |   FiAward,
+     | ^^^^^^^^^^^^^^^
+>  8 |   FiClock,
+     | ^^^^^^^^^^^^^^^
+>  9 |   FiCheck,
+     | ^^^^^^^^^^^^^^^
+> 10 |   FiTrendingUp,
+     | ^^^^^^^^^^^^^^^
+> 11 |   FiStar,
+     | ^^^^^^^^^^^^^^^
+> 12 |   FiArrowRight,
+     | ^^^^^^^^^^^^^^^
+> 13 |   FiCalendar,
+     | ^^^^^^^^^^^^^^^
+> 14 |   FiHome,
+     | ^^^^^^^^^^^^^^^
+> 15 |   FiChevronRight,
+     | ^^^^^^^^^^^^^^^
+> 16 |   FiBarChart,
+     | ^^^^^^^^^^^^^^^
+> 17 |   FiTarget,
+     | ^^^^^^^^^^^^^^^
+> 18 |   FiShield,
+     | ^^^^^^^^^^^^^^^
+> 19 |   FiSmartphone,
+     | ^^^^^^^^^^^^^^^
+> 20 |   FiGlobe,
+     | ^^^^^^^^^^^^^^^
+> 21 |   FiEye
+     | ^^^^^^^^^^^^^^^
+> 22 | } from 'react-icons/fi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import styles from './HomePage.module.css';
+  24 |
+  25 | // Main Page Component with SSG and ISR
+
+The export FiCalculator was not found in module [project]/node_modules/react-icons/fi/index.mjs [client] (ecmascript).
+Did you mean to import FiCalendar?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+[00:03:45.938] Browser ERROR   ./src/pages/index.jsx:4:1
+Export FiCalculator doesn't exist in target module
+   2 | import { } from 'react-icons/fi';
+   3 | import Link from 'next/link';
+>  4 | import {
+     | ^^^^^^^^
+>  5 |   FiCalculator,
+     | ^^^^^^^^^^^^^^^
+>  6 |   FiUsers,
+     | ^^^^^^^^^^^^^^^
+>  7 |   FiAward,
+     | ^^^^^^^^^^^^^^^
+>  8 |   FiClock,
+     | ^^^^^^^^^^^^^^^
+>  9 |   FiCheck,
+     | ^^^^^^^^^^^^^^^
+> 10 |   FiTrendingUp,
+     | ^^^^^^^^^^^^^^^
+> 11 |   FiStar,
+     | ^^^^^^^^^^^^^^^
+> 12 |   FiArrowRight,
+     | ^^^^^^^^^^^^^^^
+> 13 |   FiCalendar,
+     | ^^^^^^^^^^^^^^^
+> 14 |   FiHome,
+     | ^^^^^^^^^^^^^^^
+> 15 |   FiChevronRight,
+     | ^^^^^^^^^^^^^^^
+> 16 |   FiBarChart,
+     | ^^^^^^^^^^^^^^^
+> 17 |   FiTarget,
+     | ^^^^^^^^^^^^^^^
+> 18 |   FiShield,
+     | ^^^^^^^^^^^^^^^
+> 19 |   FiSmartphone,
+     | ^^^^^^^^^^^^^^^
+> 20 |   FiGlobe,
+     | ^^^^^^^^^^^^^^^
+> 21 |   FiEye
+     | ^^^^^^^^^^^^^^^
+> 22 | } from 'react-icons/fi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import styles from './HomePage.module.css';
+  24 |
+  25 | // Main Page Component with SSG and ISR
+
+The export FiCalculator was not found in module [project]/node_modules/react-icons/fi/index.mjs [client] (ecmascript).
+Did you mean to import FiCalendar?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:03:45.939] Browser ERROR   ./src/pages/index.jsx:4:1
+Export FiCalculator doesn't exist in target module
+   2 | import { } from 'react-icons/fi';
+   3 | import Link from 'next/link';
+>  4 | import {
+     | ^^^^^^^^
+>  5 |   FiCalculator,
+     | ^^^^^^^^^^^^^^^
+>  6 |   FiUsers,
+     | ^^^^^^^^^^^^^^^
+>  7 |   FiAward,
+     | ^^^^^^^^^^^^^^^
+>  8 |   FiClock,
+     | ^^^^^^^^^^^^^^^
+>  9 |   FiCheck,
+     | ^^^^^^^^^^^^^^^
+> 10 |   FiTrendingUp,
+     | ^^^^^^^^^^^^^^^
+> 11 |   FiStar,
+     | ^^^^^^^^^^^^^^^
+> 12 |   FiArrowRight,
+     | ^^^^^^^^^^^^^^^
+> 13 |   FiCalendar,
+     | ^^^^^^^^^^^^^^^
+> 14 |   FiHome,
+     | ^^^^^^^^^^^^^^^
+> 15 |   FiChevronRight,
+     | ^^^^^^^^^^^^^^^
+> 16 |   FiBarChart,
+     | ^^^^^^^^^^^^^^^
+> 17 |   FiTarget,
+     | ^^^^^^^^^^^^^^^
+> 18 |   FiShield,
+     | ^^^^^^^^^^^^^^^
+> 19 |   FiSmartphone,
+     | ^^^^^^^^^^^^^^^
+> 20 |   FiGlobe,
+     | ^^^^^^^^^^^^^^^
+> 21 |   FiEye
+     | ^^^^^^^^^^^^^^^
+> 22 | } from 'react-icons/fi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import styles from './HomePage.module.css';
+  24 |
+  25 | // Main Page Component with SSG and ISR
+
+The export FiCalculator was not found in module [project]/node_modules/react-icons/fi/index.mjs [ssr] (ecmascript).
+Did you mean to import FiCalendar?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:03:45.939] Browser ERROR   ./src/pages/index.jsx:4:1
+Export FiCalculator doesn't exist in target module
+   2 | import { } from 'react-icons/fi';
+   3 | import Link from 'next/link';
+>  4 | import {
+     | ^^^^^^^^
+>  5 |   FiCalculator,
+     | ^^^^^^^^^^^^^^^
+>  6 |   FiUsers,
+     | ^^^^^^^^^^^^^^^
+>  7 |   FiAward,
+     | ^^^^^^^^^^^^^^^
+>  8 |   FiClock,
+     | ^^^^^^^^^^^^^^^
+>  9 |   FiCheck,
+     | ^^^^^^^^^^^^^^^
+> 10 |   FiTrendingUp,
+     | ^^^^^^^^^^^^^^^
+> 11 |   FiStar,
+     | ^^^^^^^^^^^^^^^
+> 12 |   FiArrowRight,
+     | ^^^^^^^^^^^^^^^
+> 13 |   FiCalendar,
+     | ^^^^^^^^^^^^^^^
+> 14 |   FiHome,
+     | ^^^^^^^^^^^^^^^
+> 15 |   FiChevronRight,
+     | ^^^^^^^^^^^^^^^
+> 16 |   FiBarChart,
+     | ^^^^^^^^^^^^^^^
+> 17 |   FiTarget,
+     | ^^^^^^^^^^^^^^^
+> 18 |   FiShield,
+     | ^^^^^^^^^^^^^^^
+> 19 |   FiSmartphone,
+     | ^^^^^^^^^^^^^^^
+> 20 |   FiGlobe,
+     | ^^^^^^^^^^^^^^^
+> 21 |   FiEye
+     | ^^^^^^^^^^^^^^^
+> 22 | } from 'react-icons/fi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import styles from './HomePage.module.css';
+  24 |
+  25 | // Main Page Component with SSG and ISR
+
+The export FiCalculator was not found in module [project]/node_modules/react-icons/fi/index.mjs [client] (ecmascript).
+Did you mean to import FiCalendar?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:03:45.939] Browser ERROR   ./src/pages/index.jsx:4:1
+Export FiCalculator doesn't exist in target module
+   2 | import { } from 'react-icons/fi';
+   3 | import Link from 'next/link';
+>  4 | import {
+     | ^^^^^^^^
+>  5 |   FiCalculator,
+     | ^^^^^^^^^^^^^^^
+>  6 |   FiUsers,
+     | ^^^^^^^^^^^^^^^
+>  7 |   FiAward,
+     | ^^^^^^^^^^^^^^^
+>  8 |   FiClock,
+     | ^^^^^^^^^^^^^^^
+>  9 |   FiCheck,
+     | ^^^^^^^^^^^^^^^
+> 10 |   FiTrendingUp,
+     | ^^^^^^^^^^^^^^^
+> 11 |   FiStar,
+     | ^^^^^^^^^^^^^^^
+> 12 |   FiArrowRight,
+     | ^^^^^^^^^^^^^^^
+> 13 |   FiCalendar,
+     | ^^^^^^^^^^^^^^^
+> 14 |   FiHome,
+     | ^^^^^^^^^^^^^^^
+> 15 |   FiChevronRight,
+     | ^^^^^^^^^^^^^^^
+> 16 |   FiBarChart,
+     | ^^^^^^^^^^^^^^^
+> 17 |   FiTarget,
+     | ^^^^^^^^^^^^^^^
+> 18 |   FiShield,
+     | ^^^^^^^^^^^^^^^
+> 19 |   FiSmartphone,
+     | ^^^^^^^^^^^^^^^
+> 20 |   FiGlobe,
+     | ^^^^^^^^^^^^^^^
+> 21 |   FiEye
+     | ^^^^^^^^^^^^^^^
+> 22 | } from 'react-icons/fi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import styles from './HomePage.module.css';
+  24 |
+  25 | // Main Page Component with SSG and ISR
+
+The export FiCalculator was not found in module [project]/node_modules/react-icons/fi/index.mjs [ssr] (ecmascript).
+Did you mean to import FiCalendar?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:12:35.536] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:12:36.384] Server  ERROR   Invalid DOM property `hreflang`. Did you mean `hrefLang`?
+[00:12:36.444] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:34:11.859] Server  LOG     ✓ Compiled in 48ms
+[00:40:06.162] Server  LOG     ✓ Compiled in 19ms
+[00:41:01.138] Server  LOG     ✓ Compiled in 61ms
+[00:41:01.147] Browser LOG     Refreshing page data due to server-side change
+[01:38:56.711] Server  ERROR   PageNotFoundError: Cannot find module for page: /age-difference-in-relationships
+[01:39:26.190] Server  ERROR   PageNotFoundError: Cannot find module for page: /calculate-days-alive
+[01:51:01.376] Server  LOG     ✓ Compiled in 142ms
+[01:56:30.703] Browser WARN    Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@400;500&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component

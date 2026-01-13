@@ -1,0 +1,30 @@
+/* [project]/src/pages/globals.css [client] (css) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%) !important;
+}
+
+.app-wrapper {
+  background: #000;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body, div, section, main, header, footer, nav, article, aside {
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%) !important;
+}
+
+* {
+  background-color: inherit;
+}
+
+/*# sourceMappingURL=src_pages_globals_css_65f1660e._.single.css.map*/

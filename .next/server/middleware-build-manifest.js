@@ -1,40 +1,82 @@
 globalThis.__BUILD_MANIFEST = {
-  "polyfillFiles": [
-    "static/chunks/polyfills.js"
-  ],
-  "devFiles": [
-    "static/chunks/react-refresh.js"
-  ],
-  "ampDevFiles": [],
-  "lowPriorityFiles": [],
-  "rootMainFiles": [],
-  "rootMainFilesTree": {},
   "pages": {
+    "/": [
+      "static/chunks/e9935a44338bfcaa.js",
+      "static/chunks/b0abb36d07a9def5.js",
+      "static/chunks/ac3e0f81bf05dec4.js",
+      "static/chunks/4848e0f131b3a480.js",
+      "static/chunks/4348d3d59a3bbeac.css",
+      "static/chunks/turbopack-19cbe74728fb13b8.js"
+    ],
+    "/404": [
+      "static/chunks/8782c447e3a63672.js",
+      "static/chunks/4848e0f131b3a480.js",
+      "static/chunks/b0abb36d07a9def5.js",
+      "static/chunks/turbopack-23b50425d43bc2f7.js"
+    ],
     "/_app": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_app.js"
+      "static/chunks/c2c060156a7e4544.js",
+      "static/chunks/4848e0f131b3a480.js",
+      "static/chunks/b0abb36d07a9def5.js",
+      "static/chunks/9a3685efbaef8e53.css",
+      "static/chunks/turbopack-9ead8bc87a80ee1e.js"
     ],
     "/_error": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_error.js"
+      "static/chunks/dc19edee321b2d12.js",
+      "static/chunks/4848e0f131b3a480.js",
+      "static/chunks/b0abb36d07a9def5.js",
+      "static/chunks/turbopack-3f613cd002871dba.js"
+    ],
+    "/about": [
+      "static/chunks/167f019cd7f360a0.js",
+      "static/chunks/4848e0f131b3a480.js",
+      "static/chunks/b0abb36d07a9def5.js",
+      "static/chunks/f465cd896e346d15.css",
+      "static/chunks/turbopack-c5b75f133ea69acc.js"
+    ],
+    "/age-calculator": [
+      "static/chunks/0fd6279116b1ec27.js",
+      "static/chunks/f4ad40d99820b12b.js",
+      "static/chunks/4848e0f131b3a480.js",
+      "static/chunks/b0abb36d07a9def5.js",
+      "static/chunks/d25000c9cc43b58f.css",
+      "static/chunks/turbopack-f19206731a4cca2c.js"
     ],
     "/age-comparator": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/age-comparator.js"
+      "static/chunks/fab13d20dd387b46.js",
+      "static/chunks/4848e0f131b3a480.js",
+      "static/chunks/b0abb36d07a9def5.js",
+      "static/chunks/226d1bd0dad0cb60.css",
+      "static/chunks/turbopack-75f39a562a13761f.js"
     ],
     "/age-quiz-game": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/age-quiz-game.js"
+      "static/chunks/df3a35fe994c9913.js",
+      "static/chunks/4848e0f131b3a480.js",
+      "static/chunks/b0abb36d07a9def5.js",
+      "static/chunks/62de3a54a1c273b0.css",
+      "static/chunks/turbopack-ba58d4f4d124f904.js"
+    ],
+    "/contact": [
+      "static/chunks/bf0d9c73e33592bd.js",
+      "static/chunks/4848e0f131b3a480.js",
+      "static/chunks/b0abb36d07a9def5.js",
+      "static/chunks/8d2509c3602bc6f0.css",
+      "static/chunks/turbopack-c35957fbd035ed1e.js"
+    ],
+    "/privacy-policy": [
+      "static/chunks/0a19d9f011179785.js",
+      "static/chunks/4848e0f131b3a480.js",
+      "static/chunks/b0abb36d07a9def5.js",
+      "static/chunks/030fbdd8fbc2c0b2.css",
+      "static/chunks/turbopack-890d4091d1dd6d10.js"
     ]
   },
-  "ampFirstPages": []
+  "devFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": []
 };
 globalThis.__BUILD_MANIFEST.lowPriorityFiles = [
 "/static/" + process.env.__NEXT_BUILD_ID + "/_buildManifest.js",
-,"/static/" + process.env.__NEXT_BUILD_ID + "/_ssgManifest.js",
-
+"/static/" + process.env.__NEXT_BUILD_ID + "/_ssgManifest.js"
 ];

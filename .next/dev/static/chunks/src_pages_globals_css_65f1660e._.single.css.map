@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/pages/globals.css"],"sourcesContent":["/* styles/globals.css */\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nhtml, body {\r\n  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%) !important;\r\n  color: #ffffff;\r\n  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;\r\n  min-height: 100vh;\r\n  width: 100%;\r\n}\r\n\r\n.app-wrapper {\r\n  background: #000000;\r\n  min-height: 100vh;\r\n  width: 100%;\r\n}\r\n\r\n/* Force black background on all elements */\r\nbody, div, section, main, header, footer, nav, article, aside {\r\n  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%) !important;\r\n}\r\n\r\n/* Ensure no white gaps */\r\n* {\r\n  background-color: inherit;\r\n}"],"names":[],"mappings":"AACA;;;;;;AAMA;;;;;;;;AAQA;;;;;;AAOA;;;;AAKA"}}]
+}

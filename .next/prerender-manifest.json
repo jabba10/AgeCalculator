@@ -1,11 +1,65 @@
 {
   "version": 4,
-  "routes": {},
+  "routes": {
+    "/": {
+      "initialRevalidateSeconds": 21600,
+      "initialExpireSeconds": 31536000,
+      "srcRoute": null,
+      "dataRoute": "/_next/data/9pi1GwBGIw53ZCOOD16wP/index.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/age-comparator": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": null,
+      "dataRoute": "/_next/data/9pi1GwBGIw53ZCOOD16wP/age-comparator.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/age-calculator": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": null,
+      "dataRoute": "/_next/data/9pi1GwBGIw53ZCOOD16wP/age-calculator.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/age-quiz-game": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": null,
+      "dataRoute": "/_next/data/9pi1GwBGIw53ZCOOD16wP/age-quiz-game.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    }
+  },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "a03c310cd7b247c03323df9859058597",
-    "previewModeSigningKey": "e2cf5b017876f787928e8a6379119c68e0f99ac5c5f053cc0297be640834a454",
-    "previewModeEncryptionKey": "a27b252b10698fccfd56e70ea076a573308cb526b42ed763312dd99117452ece"
+    "previewModeId": "7a7f701a463371a7c6ca7c18030d7ce1",
+    "previewModeSigningKey": "dc99592b498cb06eba9a41e46792d5eef0b00f46362c084af8f8dcd1c87a5b66",
+    "previewModeEncryptionKey": "6068e07b7c4a2826b4271bbdd4809f190a1ac076737397a0693af1ab17ec8bdd"
   }
 }

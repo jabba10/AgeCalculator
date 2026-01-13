@@ -1,0 +1,832 @@
+/* [project]/src/pages/AgeCalculator.module.css [client] (css) */
+.AgeCalculator-module__FZuHHq__appContainer {
+  color: #fff;
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+  min-height: 100vh;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+}
+
+.AgeCalculator-module__FZuHHq__printMode {
+  color: #000 !important;
+  background: #fff !important;
+}
+
+.AgeCalculator-module__FZuHHq__printHeader {
+  display: none;
+}
+
+.AgeCalculator-module__FZuHHq__appHeader {
+  text-align: center;
+  background: linear-gradient(135deg, #0f0f23f2 0%, #1a1a2ee6 50%, #16213ed9 100%);
+  padding: 6rem 2rem 4rem;
+  position: relative;
+}
+
+.AgeCalculator-module__FZuHHq__headerContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.AgeCalculator-module__FZuHHq__headerTitle {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(135deg, #fff 0%, #a8b2d1 100%) text;
+  margin-bottom: 1rem;
+  font-family: Poppins, sans-serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+}
+
+.AgeCalculator-module__FZuHHq__headerSubtitle {
+  color: #a8b2d1;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.AgeCalculator-module__FZuHHq__mainContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+.AgeCalculator-module__FZuHHq__calculatorContainer {
+  backdrop-filter: blur(20px);
+  background: #ffffff0d;
+  border: 1px solid #ffffff1a;
+  border-radius: 24px;
+  padding: 3rem;
+  transition: all .3s;
+}
+
+.AgeCalculator-module__FZuHHq__calculatorContainer.AgeCalculator-module__FZuHHq__calculating {
+  animation: .6s ease-in-out AgeCalculator-module__FZuHHq__pulse;
+}
+
+.AgeCalculator-module__FZuHHq__modeSelector {
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+}
+
+.AgeCalculator-module__FZuHHq__modeBtn {
+  color: #a8b2d1;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  background: #ffffff1a;
+  border: 1px solid #fff3;
+  border-radius: 16px;
+  align-items: center;
+  gap: .75rem;
+  padding: 1rem 1.5rem;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  transition: all .3s;
+  display: flex;
+}
+
+.AgeCalculator-module__FZuHHq__modeBtn:hover {
+  background: #ffffff26;
+  transform: translateY(-2px);
+}
+
+.AgeCalculator-module__FZuHHq__modeBtn.AgeCalculator-module__FZuHHq__active {
+  color: #fff;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: #667eea80;
+  box-shadow: 0 8px 32px #667eea4d;
+}
+
+.AgeCalculator-module__FZuHHq__modeIcon {
+  font-size: 1.25rem;
+}
+
+.AgeCalculator-module__FZuHHq__dateInputSection {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  display: grid;
+}
+
+.AgeCalculator-module__FZuHHq__inputCard {
+  background: #ffffff14;
+  border: 1px solid #ffffff26;
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all .3s;
+}
+
+.AgeCalculator-module__FZuHHq__inputCard:hover {
+  background: #ffffff1f;
+  transform: translateY(-2px);
+}
+
+.AgeCalculator-module__FZuHHq__inputLabel {
+  color: #fff;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  display: flex;
+}
+
+.AgeCalculator-module__FZuHHq__labelIcon {
+  font-size: 1.5rem;
+}
+
+.AgeCalculator-module__FZuHHq__dateInput {
+  color: #fff;
+  background: #ffffff1a;
+  border: 1px solid #fff3;
+  border-radius: 12px;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-family: Inter, sans-serif;
+  font-size: 1.125rem;
+  transition: all .3s;
+}
+
+.AgeCalculator-module__FZuHHq__dateInput:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 0 3px #667eea33;
+}
+
+.AgeCalculator-module__FZuHHq__dateInput::placeholder {
+  color: #a8b2d1;
+}
+
+.AgeCalculator-module__FZuHHq__errorText {
+  color: #ff6b6b;
+  margin-top: .5rem;
+  margin-bottom: 0;
+  font-size: .875rem;
+}
+
+.AgeCalculator-module__FZuHHq__actionButtons {
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  display: flex;
+}
+
+.AgeCalculator-module__FZuHHq__calculateBtn {
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 16px;
+  padding: 1.25rem 2.5rem;
+  font-family: Inter, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  transition: all .3s;
+  box-shadow: 0 8px 32px #667eea4d;
+}
+
+.AgeCalculator-module__FZuHHq__calculateBtn:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px #667eea66;
+}
+
+.AgeCalculator-module__FZuHHq__calculateBtn:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.AgeCalculator-module__FZuHHq__resetBtn {
+  color: #a8b2d1;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  background: #ffffff1a;
+  border: 1px solid #fff3;
+  border-radius: 16px;
+  padding: 1.25rem 2rem;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.AgeCalculator-module__FZuHHq__resetBtn:hover {
+  background: #ffffff26;
+  transform: translateY(-2px);
+}
+
+.AgeCalculator-module__FZuHHq__resultsSection {
+  animation: .6s ease-out AgeCalculator-module__FZuHHq__fadeInUp;
+}
+
+.AgeCalculator-module__FZuHHq__resultHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.AgeCalculator-module__FZuHHq__resultTitle {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(135deg, #fff 0%, #a8b2d1 100%) text;
+  margin-bottom: 1rem;
+  font-family: Poppins, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.AgeCalculator-module__FZuHHq__ageSummary {
+  color: #a8b2d1;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.AgeCalculator-module__FZuHHq__ageCardsGrid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+  display: grid;
+}
+
+.AgeCalculator-module__FZuHHq__ageCard {
+  backdrop-filter: blur(10px);
+  background: #ffffff14;
+  border: 1px solid #ffffff26;
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all .3s;
+  animation: .6s ease-out both AgeCalculator-module__FZuHHq__slideInUp;
+  overflow: hidden;
+}
+
+.AgeCalculator-module__FZuHHq__ageCard:hover {
+  background: #ffffff1f;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px #0000004d;
+}
+
+.AgeCalculator-module__FZuHHq__cardContent {
+  align-items: center;
+  gap: 1.5rem;
+  display: flex;
+}
+
+.AgeCalculator-module__FZuHHq__cardIcon {
+  flex-shrink: 0;
+  font-size: 2.5rem;
+}
+
+.AgeCalculator-module__FZuHHq__cardText {
+  flex: 1;
+  min-width: 0;
+}
+
+.AgeCalculator-module__FZuHHq__cardTitle {
+  color: #a8b2d1;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  margin: 0 0 .5rem;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.AgeCalculator-module__FZuHHq__cardValue {
+  color: #fff;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin: 0 0 .25rem;
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.AgeCalculator-module__FZuHHq__cardUnit {
+  color: #a8b2d1;
+  text-transform: lowercase;
+  margin: 0;
+  font-size: .8rem;
+}
+
+.AgeCalculator-module__FZuHHq__featuresSection {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+  display: grid;
+}
+
+.AgeCalculator-module__FZuHHq__featureCard {
+  backdrop-filter: blur(10px);
+  background: #ffffff14;
+  border: 1px solid #ffffff26;
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all .3s;
+}
+
+.AgeCalculator-module__FZuHHq__featureCard:hover {
+  background: #ffffff1f;
+  transform: translateY(-3px);
+}
+
+.AgeCalculator-module__FZuHHq__featureTitle {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.AgeCalculator-module__FZuHHq__zodiacInfo {
+  flex-direction: column;
+  gap: 1.5rem;
+  display: flex;
+}
+
+.AgeCalculator-module__FZuHHq__zodiacItem {
+  background: #ffffff0d;
+  border-radius: 12px;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  transition: all .3s;
+  display: flex;
+}
+
+.AgeCalculator-module__FZuHHq__zodiacItem:hover {
+  background: #ffffff14;
+  transform: translateX(5px);
+}
+
+.AgeCalculator-module__FZuHHq__zodiacIcon {
+  flex-shrink: 0;
+  font-size: 2rem;
+}
+
+.AgeCalculator-module__FZuHHq__zodiacName {
+  color: #fff;
+  margin: 0 0 .25rem;
+  font-weight: 600;
+}
+
+.AgeCalculator-module__FZuHHq__zodiacDetail {
+  color: #a8b2d1;
+  margin: 0;
+  font-size: .875rem;
+}
+
+.AgeCalculator-module__FZuHHq__countdownBox {
+  text-align: center;
+  padding: 2rem;
+}
+
+.AgeCalculator-module__FZuHHq__countdownDays {
+  color: #667eea;
+  margin: 0 0 .5rem;
+  font-family: Poppins, sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.AgeCalculator-module__FZuHHq__countdownLabel {
+  color: #a8b2d1;
+  margin: 0 0 .5rem;
+  font-size: 1.125rem;
+}
+
+.AgeCalculator-module__FZuHHq__countdownDate {
+  color: #fff;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.AgeCalculator-module__FZuHHq__birthdayToday {
+  color: gold;
+  text-align: center;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.AgeCalculator-module__FZuHHq__progressContainer {
+  padding: 1rem 0;
+}
+
+.AgeCalculator-module__FZuHHq__progressBar {
+  background: #ffffff1a;
+  border-radius: 6px;
+  width: 100%;
+  height: 12px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.AgeCalculator-module__FZuHHq__progressFill {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 6px;
+  height: 100%;
+  transition: width 1s ease-in-out;
+}
+
+.AgeCalculator-module__FZuHHq__progressStats {
+  color: #a8b2d1;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+.AgeCalculator-module__FZuHHq__progressNote {
+  color: #a8b2d1;
+  text-align: center;
+  margin: 0;
+  font-size: .875rem;
+}
+
+.AgeCalculator-module__FZuHHq__milestonesGrid {
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  display: grid;
+}
+
+.AgeCalculator-module__FZuHHq__milestoneItem {
+  text-align: center;
+  background: #ffffff0d;
+  border: 1px solid #ffffff1a;
+  border-radius: 12px;
+  padding: 1rem;
+  transition: all .3s;
+}
+
+.AgeCalculator-module__FZuHHq__milestoneItem:hover {
+  background: #ffffff14;
+  transform: scale(1.05);
+}
+
+.AgeCalculator-module__FZuHHq__milestoneAge {
+  color: #667eea;
+  margin-bottom: .25rem;
+  font-family: Poppins, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: block;
+}
+
+.AgeCalculator-module__FZuHHq__milestoneLabel {
+  color: #a8b2d1;
+  margin: 0 0 .25rem;
+  font-size: .7rem;
+}
+
+.AgeCalculator-module__FZuHHq__milestoneDate {
+  color: #fff;
+  margin: 0 0 .25rem;
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.AgeCalculator-module__FZuHHq__milestoneYearsLeft {
+  color: #a8b2d1;
+  margin: 0;
+  font-size: .7rem;
+}
+
+.AgeCalculator-module__FZuHHq__retirementBox {
+  text-align: center;
+  padding: 1rem;
+}
+
+.AgeCalculator-module__FZuHHq__retirementYears {
+  color: #ff6b6b;
+  margin: 0 0 .5rem;
+  font-family: Poppins, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.AgeCalculator-module__FZuHHq__retirementLabel {
+  color: #a8b2d1;
+  margin: 0 0 .5rem;
+  font-size: 1rem;
+}
+
+.AgeCalculator-module__FZuHHq__retirementDate {
+  color: #fff;
+  margin: 0 0 .5rem;
+  font-size: .9rem;
+}
+
+.AgeCalculator-module__FZuHHq__retirementDetail {
+  color: #a8b2d1;
+  margin: 0;
+  font-size: .8rem;
+}
+
+.AgeCalculator-module__FZuHHq__eventsSubtitle {
+  color: #a8b2d1;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.AgeCalculator-module__FZuHHq__eventsTimeline {
+  flex-direction: column;
+  gap: 1rem;
+  display: flex;
+}
+
+.AgeCalculator-module__FZuHHq__eventItem {
+  background: #ffffff0d;
+  border-radius: 12px;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  transition: all .3s;
+  display: flex;
+}
+
+.AgeCalculator-module__FZuHHq__eventItem:hover {
+  background: #ffffff14;
+  transform: translateX(5px);
+}
+
+.AgeCalculator-module__FZuHHq__eventYear {
+  color: #fff;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 8px;
+  flex-shrink: 0;
+  padding: .5rem .75rem;
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.AgeCalculator-module__FZuHHq__eventText {
+  color: #fff;
+  margin: 0;
+  font-size: .9rem;
+  line-height: 1.4;
+}
+
+.AgeCalculator-module__FZuHHq__funFacts {
+  margin-bottom: 4rem;
+}
+
+.AgeCalculator-module__FZuHHq__funFactsTitle {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-family: Poppins, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.AgeCalculator-module__FZuHHq__factsGrid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  display: grid;
+}
+
+.AgeCalculator-module__FZuHHq__factCard {
+  backdrop-filter: blur(10px);
+  background: #ffffff14;
+  border: 1px solid #ffffff26;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all .3s;
+}
+
+.AgeCalculator-module__FZuHHq__factCard:hover {
+  background: #ffffff1f;
+  transform: translateY(-3px);
+}
+
+.AgeCalculator-module__FZuHHq__factIcon {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  display: block;
+}
+
+.AgeCalculator-module__FZuHHq__factText {
+  color: #a8b2d1;
+  margin: 0;
+  font-size: .9rem;
+  line-height: 1.5;
+}
+
+.AgeCalculator-module__FZuHHq__shareSection {
+  text-align: center;
+}
+
+.AgeCalculator-module__FZuHHq__shareTitle {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-family: Poppins, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.AgeCalculator-module__FZuHHq__shareButtons {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.AgeCalculator-module__FZuHHq__shareBtn {
+  color: #fff;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  background: #ffffff1a;
+  border: 1px solid #fff3;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  font-family: Inter, sans-serif;
+  font-size: .9rem;
+  font-weight: 500;
+  transition: all .3s;
+}
+
+.AgeCalculator-module__FZuHHq__shareBtn:hover {
+  background: #ffffff26;
+  transform: translateY(-2px);
+}
+
+.AgeCalculator-module__FZuHHq__shareBtn.AgeCalculator-module__FZuHHq__fb {
+  background: #3b599833;
+  border-color: #3b599866;
+}
+
+.AgeCalculator-module__FZuHHq__shareBtn.AgeCalculator-module__FZuHHq__tw {
+  background: #1da1f233;
+  border-color: #1da1f266;
+}
+
+.AgeCalculator-module__FZuHHq__shareBtn.AgeCalculator-module__FZuHHq__wa {
+  background: #25d36633;
+  border-color: #25d36666;
+}
+
+.AgeCalculator-module__FZuHHq__shareBtn.AgeCalculator-module__FZuHHq__em {
+  background: #ea433533;
+  border-color: #ea433566;
+}
+
+.AgeCalculator-module__FZuHHq__shareBtn.AgeCalculator-module__FZuHHq__print {
+  background: #667eea33;
+  border-color: #667eea66;
+}
+
+@keyframes AgeCalculator-module__FZuHHq__fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes AgeCalculator-module__FZuHHq__slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes AgeCalculator-module__FZuHHq__pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@media (max-width: 768px) {
+  .AgeCalculator-module__FZuHHq__appHeader {
+    padding: 5rem 1rem 3rem;
+  }
+
+  .AgeCalculator-module__FZuHHq__mainContent {
+    padding: 0 1rem 3rem;
+  }
+
+  .AgeCalculator-module__FZuHHq__calculatorContainer {
+    padding: 2rem 1.5rem;
+  }
+
+  .AgeCalculator-module__FZuHHq__modeSelector {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .AgeCalculator-module__FZuHHq__dateInputSection {
+    grid-template-columns: 1fr;
+  }
+
+  .AgeCalculator-module__FZuHHq__actionButtons {
+    flex-direction: column;
+  }
+
+  .AgeCalculator-module__FZuHHq__ageCardsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .AgeCalculator-module__FZuHHq__featuresSection {
+    grid-template-columns: 1fr;
+  }
+
+  .AgeCalculator-module__FZuHHq__shareButtons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .AgeCalculator-module__FZuHHq__resultTitle {
+    font-size: 2rem;
+  }
+
+  .AgeCalculator-module__FZuHHq__ageSummary {
+    font-size: 1.25rem;
+  }
+
+  .AgeCalculator-module__FZuHHq__cardValue {
+    font-size: 1.4rem;
+  }
+
+  .AgeCalculator-module__FZuHHq__cardIcon {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .AgeCalculator-module__FZuHHq__headerTitle {
+    font-size: 2rem;
+  }
+
+  .AgeCalculator-module__FZuHHq__headerSubtitle {
+    font-size: 1rem;
+  }
+
+  .AgeCalculator-module__FZuHHq__calculatorContainer {
+    border-radius: 16px;
+    padding: 1.5rem 1rem;
+  }
+
+  .AgeCalculator-module__FZuHHq__inputCard, .AgeCalculator-module__FZuHHq__ageCard {
+    padding: 1.5rem;
+  }
+
+  .AgeCalculator-module__FZuHHq__cardContent {
+    gap: 1rem;
+  }
+
+  .AgeCalculator-module__FZuHHq__cardIcon {
+    font-size: 2rem;
+  }
+
+  .AgeCalculator-module__FZuHHq__cardValue {
+    font-size: 1.3rem;
+  }
+
+  .AgeCalculator-module__FZuHHq__cardTitle {
+    font-size: .85rem;
+  }
+
+  .AgeCalculator-module__FZuHHq__cardUnit {
+    font-size: .75rem;
+  }
+
+  .AgeCalculator-module__FZuHHq__featureCard {
+    padding: 1.5rem;
+  }
+
+  .AgeCalculator-module__FZuHHq__milestonesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .AgeCalculator-module__FZuHHq__countdownDays {
+    font-size: 2.5rem;
+  }
+
+  .AgeCalculator-module__FZuHHq__retirementYears {
+    font-size: 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .AgeCalculator-module__FZuHHq__calculatorContainer, .AgeCalculator-module__FZuHHq__ageCard, .AgeCalculator-module__FZuHHq__featureCard, .AgeCalculator-module__FZuHHq__factCard, .AgeCalculator-module__FZuHHq__modeBtn, .AgeCalculator-module__FZuHHq__calculateBtn, .AgeCalculator-module__FZuHHq__resetBtn, .AgeCalculator-module__FZuHHq__shareBtn, .AgeCalculator-module__FZuHHq__zodiacItem, .AgeCalculator-module__FZuHHq__milestoneItem, .AgeCalculator-module__FZuHHq__eventItem {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .AgeCalculator-module__FZuHHq__calculatorContainer.AgeCalculator-module__FZuHHq__calculating, .AgeCalculator-module__FZuHHq__ageCard {
+    animation: none;
+  }
+}
+
+/*# sourceMappingURL=src_pages_AgeCalculator_module_ae8ddd7c.css.map*/

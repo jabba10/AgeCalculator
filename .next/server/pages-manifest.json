@@ -1,8 +1,13 @@
 {
+  "/": "pages/index.js",
+  "/404": "pages/404.html",
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/age-comparator": "pages/age-comparator.js",
+  "/_error": "pages/_error.js",
+  "/about": "pages/about.html",
   "/age-calculator": "pages/age-calculator.js",
-  "/age-quiz-game": "pages/age-quiz-game.js"
+  "/age-comparator": "pages/age-comparator.js",
+  "/age-quiz-game": "pages/age-quiz-game.js",
+  "/contact": "pages/contact.html",
+  "/privacy-policy": "pages/privacy-policy.html"
 }
